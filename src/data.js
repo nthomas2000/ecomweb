@@ -1,22 +1,22 @@
 export const sliderItems = [
     {
         id: 1,
-        img: "R.png",
+        img: "g1.png",
         title: "WINTER SALE",
         desc: "SHOW BEFORE DRAGONS SHOW UP",
         bg: "f5fafd",
     },
     {
         id: 3,
-        img: "R.png",
-        title: "WINTER SALE",
+        img: "g2.png",
+        title: "SUMMER SALE",
         desc: "SHOW BEFORE DRAGONS SHOW UP",
         bg: "f5fafu",
     },
     {
         id: 3,
-        img: "R.png",
-        title: "WINTER SALE",
+        img: "g3.png",
+        title: "AUTOUM SALE",
         desc: "SHOW BEFORE DRAGONS SHOW UP",
         bg: "f5fafd",
     }

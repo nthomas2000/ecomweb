@@ -9,7 +9,7 @@ height:100vh;
 background-color:white;
 display:flex;
 position:relative;
-
+overflow:hidden;
 `;
 
 
@@ -29,12 +29,14 @@ right: ${(props)=> props.direction === "right" && "10px"};
 margin:auto;
 cursor:pointer;
 opacity:0.5;
+z-index:2;
 `;
 
 const Wrapper = styled.div`
 height:100%;
 display:flex;
-transform:translateX(${props=>props.slideIndex*-100}vw    );
+transform:translateX(${props=>props.slideIndex*-100}vw);
+
 
 `;
 
@@ -72,7 +74,7 @@ const Button =styled.button`
 background-color:black;
 align:center;
 color:white;
-padding:10px;`
+padding:10px;`;
 
 const Slider = () => {
     const[slideIndex,setSlideIndex]=useState(0);
@@ -84,7 +86,7 @@ const Slider = () => {
         }else{
             setSlideIndex(slideIndex <2 ? slideIndex+1 :0);
         }
-    }
+    };
   return (
     <Container>
         <Arrow direction="left" onClick={()=>handleClick("left")}>

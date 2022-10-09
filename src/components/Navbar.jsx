@@ -3,18 +3,14 @@ import { Search } from '@material-ui/icons';
 import React from 'react'
 import styled from 'styled-components'
 
-const Container =styled.div`
-height:60px;
-background-color:lightgray
 
-
-`;
 
 const Wrapper = styled.div`
-padding:0px 0px;
-display:flex;
+height:60px;
 align-items:center;
-justify-content:space-between;
+display:flex;
+
+
 `;
 
 const Left=styled.div`
@@ -25,7 +21,7 @@ const SearchContainer= styled.div`
 align-items:center; 
 display:flex
 
-`
+`;
 
 const Input =styled.input`
 border:.5px solid lightgray;
@@ -52,17 +48,17 @@ align-items:center`;
 
 const Register= styled.div`
 margin:10px;
-    `
+    `;
 const SignIn = styled.div`
 margin:10px;
-`
+`;
 const Lang =styled.span `
 margin:10px;
-`
+`;
 
 const Navbar = () => {
   return (
-    <Container>
+    
         <Wrapper>
             <Left>
                 <SearchContainer>
@@ -75,7 +71,7 @@ const Navbar = () => {
             <Right><Register>REGISTER</Register>
             <SignIn>SIGNIN</SignIn></Right>
         </Wrapper>
-        </Container>
+        
   )
 }
 
